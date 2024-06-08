@@ -54,7 +54,6 @@ def primesupto(m):
             pl.append(i)
     return pl
 
-print(primesupto(100))
 
 # list the first m primes
 
@@ -67,3 +66,19 @@ def firstprimes(m):
     return (pl)
 
 
+
+
+def primediffs(n):
+    lastprime = 2
+    pd = {} # dictionary for prime differences
+    for i in range(3, n+1):
+        if prime4(i):
+            d = i - lastprime
+            lastprime = i
+            if d in pd.keys():
+                pd[d] = pd[d] + 1
+            else:
+                pd[d] = 1
+    return (pd)
+
+print(primediffs(420))
