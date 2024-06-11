@@ -32,3 +32,5 @@ def gcd_optimized(m,n):
 
 
 
+ans = int((405448323 * 435638250) / 3)
+print(ans)
