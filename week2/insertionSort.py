@@ -14,4 +14,4 @@ def main():
     arr = [1,-66,3,654,33,4,2,62,754,51,0,9]
     print(insertionSort(arr))
 
-main()
+main() 
